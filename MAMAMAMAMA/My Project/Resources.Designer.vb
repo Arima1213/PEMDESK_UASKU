@@ -73,16 +73,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property CHIP_transformed() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("CHIP-transformed", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property CHIP_transformed__1_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("CHIP-transformed (1)", resourceCulture)
@@ -96,16 +86,6 @@ Namespace My.Resources
         Friend ReadOnly Property CHIP_transformed__1_1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("CHIP-transformed (1)1", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property giphy() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("giphy", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

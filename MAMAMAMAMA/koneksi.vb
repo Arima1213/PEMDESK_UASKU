@@ -7,7 +7,6 @@ Module koneksi
     Public mystring As String = "data source=XE; user id=DBWARUNG; password=123;"
     Public conn As New OracleConnection(mystring)
     Public perintah As New OracleCommand
-    Public dataku As New OracleDataAdapter
     Public ds As New DataSet
     Dim dt As DataTable
     Dim adapter As OracleDataAdapter

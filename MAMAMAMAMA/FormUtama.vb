@@ -1,13 +1,18 @@
 ﻿Imports System.Data.OracleClient
 Public Class FormUtama
     Public currentChildForm As Form
+    Dim dt As DataTable
+    Dim adapter As OracleDataAdapter
+    Dim sqlstr As String
+    Dim data As Integer
 
     Private Sub FormUtama_load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Button1.Visible = True
         Button2.Visible = False
         Button3.Visible = False
         Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
-        If getTanggal() = myDate Then
+        If GetTanggal() = myDate Then
         Else
             UpdateStokHarian()
         End If
@@ -18,9 +23,7 @@ Public Class FormUtama
         FormLogin.Hide()
     End Sub
     Public Sub OpenChildForm(childForm As Form)
-        If currentChildForm IsNot Nothing Then
-            currentChildForm.Close()
-        End If
+        currentChildForm?.Close()
         currentChildForm = childForm
 
         childForm.TopLevel = False
@@ -42,11 +45,8 @@ Public Class FormUtama
         koneksi.tampildata()
     End Sub
 
-    Public Function getnilai() As String
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+    Public Function GetNilai() As String
+
         Dim nilai As String
 
         sqlstr = "select * from tbl_stokharian order by tanggalstocking desc"
@@ -57,11 +57,8 @@ Public Class FormUtama
         Return nilai
     End Function
 
-    Public Function getTanggal() As String
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+    Public Function GetTanggal() As String
+
         Dim nilai As String
 
         sqlstr = "select * from tbl_stokharian order by tanggalstocking desc"
@@ -85,10 +82,7 @@ Public Class FormUtama
 
 
     Public Function UpdateStokHarian()
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+
         Dim Tanggal As String
         Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
 
