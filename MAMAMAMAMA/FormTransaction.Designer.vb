@@ -23,13 +23,14 @@ Partial Class FormTransaction
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataSetKu = New UAS_WARUNG.DataSetKu()
         Me.TBL_PRODUKTableAdapter = New UAS_WARUNG.DataSetKuTableAdapters.TBL_PRODUKTableAdapter()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.NumericUpDown1 = New Guna.UI2.WinForms.Guna2NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -38,7 +39,6 @@ Partial Class FormTransaction
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBoxIdMenu2 = New System.Windows.Forms.TextBox()
         Me.TextBoxNamaMenu2 = New System.Windows.Forms.TextBox()
-        Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.ListViewTransaksi = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -48,7 +48,6 @@ Partial Class FormTransaction
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBoxKembalian = New System.Windows.Forms.TextBox()
         Me.TextBoxUangPembeli = New System.Windows.Forms.TextBox()
         Me.TextBoxTotalSementara = New System.Windows.Forms.TextBox()
@@ -58,13 +57,14 @@ Partial Class FormTransaction
         Me.HARGAPRODUKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.STOKPRODUKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TBLPRODUKBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.NumericUpDown1 = New Guna.UI2.WinForms.Guna2NumericUpDown()
+        Me.ButtonTambah = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.ButtonCheckout = New Guna.UI2.WinForms.Guna2GradientButton()
         CType(Me.DataSetKu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridViewMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TBLPRODUKBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataSetKu
@@ -78,6 +78,7 @@ Partial Class FormTransaction
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.ButtonTambah)
         Me.GroupBox2.Controls.Add(Me.NumericUpDown1)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Label5)
@@ -87,7 +88,6 @@ Partial Class FormTransaction
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.TextBoxIdMenu2)
         Me.GroupBox2.Controls.Add(Me.TextBoxNamaMenu2)
-        Me.GroupBox2.Controls.Add(Me.ButtonTambah)
         Me.GroupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.GroupBox2.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(481, 12)
@@ -96,6 +96,19 @@ Partial Class FormTransaction
         Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Tambah Menu"
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.BackColor = System.Drawing.Color.Transparent
+        Me.NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.NumericUpDown1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(104, 128)
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(70, 27)
+        Me.NumericUpDown1.TabIndex = 18
+        Me.NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.DarkGray
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'Label1
         '
@@ -174,16 +187,6 @@ Partial Class FormTransaction
         Me.TextBoxNamaMenu2.Size = New System.Drawing.Size(240, 20)
         Me.TextBoxNamaMenu2.TabIndex = 11
         '
-        'ButtonTambah
-        '
-        Me.ButtonTambah.Font = New System.Drawing.Font("Helvetica", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonTambah.Location = New System.Drawing.Point(104, 161)
-        Me.ButtonTambah.Name = "ButtonTambah"
-        Me.ButtonTambah.Size = New System.Drawing.Size(240, 33)
-        Me.ButtonTambah.TabIndex = 9
-        Me.ButtonTambah.Text = "Tambah"
-        Me.ButtonTambah.UseVisualStyleBackColor = True
-        '
         'ListViewTransaksi
         '
         Me.ListViewTransaksi.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
@@ -227,9 +230,9 @@ Partial Class FormTransaction
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ButtonCheckout)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.TextBoxKembalian)
         Me.GroupBox1.Controls.Add(Me.TextBoxUangPembeli)
         Me.GroupBox1.Controls.Add(Me.TextBoxTotalSementara)
@@ -265,15 +268,6 @@ Partial Class FormTransaction
         Me.Label3.TabIndex = 18
         Me.Label3.Text = "UANG PEMBELI :"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(151, 161)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(205, 38)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Check Out"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'TextBoxKembalian
         '
         Me.TextBoxKembalian.Font = New System.Drawing.Font("Helvetica", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -307,49 +301,49 @@ Partial Class FormTransaction
         Me.DataGridViewMenu.AllowUserToAddRows = False
         Me.DataGridViewMenu.AllowUserToDeleteRows = False
         Me.DataGridViewMenu.AllowUserToResizeRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
-        Me.DataGridViewMenu.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
+        Me.DataGridViewMenu.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridViewMenu.AutoGenerateColumns = False
         Me.DataGridViewMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewMenu.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridViewMenu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.DataGridViewMenu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.DataGridViewMenu.ColumnHeadersHeight = 21
         Me.DataGridViewMenu.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDPRODUKDataGridViewTextBoxColumn, Me.NAMAPRODUKDataGridViewTextBoxColumn, Me.HARGAPRODUKDataGridViewTextBoxColumn, Me.STOKPRODUKDataGridViewTextBoxColumn})
         Me.DataGridViewMenu.DataSource = Me.TBLPRODUKBindingSource
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewMenu.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewMenu.DefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewMenu.EnableHeadersVisualStyles = False
         Me.DataGridViewMenu.Location = New System.Drawing.Point(12, 12)
         Me.DataGridViewMenu.Name = "DataGridViewMenu"
         Me.DataGridViewMenu.ReadOnly = True
         Me.DataGridViewMenu.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewMenu.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewMenu.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewMenu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewMenu.Size = New System.Drawing.Size(463, 211)
         Me.DataGridViewMenu.TabIndex = 21
@@ -387,18 +381,63 @@ Partial Class FormTransaction
         Me.TBLPRODUKBindingSource.DataMember = "TBL_PRODUK"
         Me.TBLPRODUKBindingSource.DataSource = Me.DataSetKu
         '
-        'NumericUpDown1
+        'ButtonTambah
         '
-        Me.NumericUpDown1.BackColor = System.Drawing.Color.Transparent
-        Me.NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.NumericUpDown1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.NumericUpDown1.Location = New System.Drawing.Point(104, 128)
-        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(70, 27)
-        Me.NumericUpDown1.TabIndex = 18
-        Me.NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.DarkGray
-        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.ButtonTambah.Animated = True
+        Me.ButtonTambah.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonTambah.BorderRadius = 10
+        Me.ButtonTambah.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonTambah.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonTambah.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.ButtonTambah.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.ButtonTambah.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.ButtonTambah.FillColor = System.Drawing.Color.Green
+        Me.ButtonTambah.FillColor2 = System.Drawing.Color.Teal
+        Me.ButtonTambah.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonTambah.ForeColor = System.Drawing.Color.White
+        Me.ButtonTambah.HoverState.FillColor = System.Drawing.Color.SpringGreen
+        Me.ButtonTambah.HoverState.FillColor2 = System.Drawing.Color.Green
+        Me.ButtonTambah.HoverState.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonTambah.Location = New System.Drawing.Point(104, 161)
+        Me.ButtonTambah.Name = "ButtonTambah"
+        Me.ButtonTambah.ShadowDecoration.BorderRadius = 10
+        Me.ButtonTambah.ShadowDecoration.Color = System.Drawing.Color.Lime
+        Me.ButtonTambah.ShadowDecoration.Depth = 3
+        Me.ButtonTambah.ShadowDecoration.Enabled = True
+        Me.ButtonTambah.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
+        Me.ButtonTambah.Size = New System.Drawing.Size(240, 37)
+        Me.ButtonTambah.TabIndex = 19
+        Me.ButtonTambah.Text = "Tambah"
+        Me.ButtonTambah.UseTransparentBackground = True
+        '
+        'ButtonCheckout
+        '
+        Me.ButtonCheckout.Animated = True
+        Me.ButtonCheckout.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonCheckout.BorderRadius = 10
+        Me.ButtonCheckout.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonCheckout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonCheckout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.ButtonCheckout.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.ButtonCheckout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.ButtonCheckout.FillColor = System.Drawing.Color.Green
+        Me.ButtonCheckout.FillColor2 = System.Drawing.Color.Teal
+        Me.ButtonCheckout.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonCheckout.ForeColor = System.Drawing.Color.White
+        Me.ButtonCheckout.HoverState.FillColor = System.Drawing.Color.SpringGreen
+        Me.ButtonCheckout.HoverState.FillColor2 = System.Drawing.Color.Green
+        Me.ButtonCheckout.HoverState.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonCheckout.Location = New System.Drawing.Point(151, 166)
+        Me.ButtonCheckout.Name = "ButtonCheckout"
+        Me.ButtonCheckout.ShadowDecoration.BorderRadius = 10
+        Me.ButtonCheckout.ShadowDecoration.Color = System.Drawing.Color.Lime
+        Me.ButtonCheckout.ShadowDecoration.Depth = 3
+        Me.ButtonCheckout.ShadowDecoration.Enabled = True
+        Me.ButtonCheckout.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
+        Me.ButtonCheckout.Size = New System.Drawing.Size(205, 37)
+        Me.ButtonCheckout.TabIndex = 20
+        Me.ButtonCheckout.Text = "Checkout"
+        Me.ButtonCheckout.UseTransparentBackground = True
         '
         'FormTransaction
         '
@@ -414,11 +453,11 @@ Partial Class FormTransaction
         CType(Me.DataSetKu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridViewMenu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TBLPRODUKBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -432,7 +471,6 @@ Partial Class FormTransaction
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBoxIdMenu2 As TextBox
     Friend WithEvents TextBoxNamaMenu2 As TextBox
-    Friend WithEvents ButtonTambah As Button
     Friend WithEvents IDMENUDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents NAMAMENUDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents HARGAMENUDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
@@ -446,7 +484,6 @@ Partial Class FormTransaction
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents TextBoxKembalian As TextBox
     Friend WithEvents TextBoxUangPembeli As TextBox
     Friend WithEvents TextBoxTotalSementara As TextBox
@@ -457,4 +494,6 @@ Partial Class FormTransaction
     Friend WithEvents HARGAPRODUKDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents STOKPRODUKDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents NumericUpDown1 As Guna.UI2.WinForms.Guna2NumericUpDown
+    Friend WithEvents ButtonTambah As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents ButtonCheckout As Guna.UI2.WinForms.Guna2GradientButton
 End Class

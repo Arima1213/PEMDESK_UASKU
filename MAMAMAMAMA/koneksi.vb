@@ -7,8 +7,12 @@ Module koneksi
     Public mystring As String = "data source=XE; user id=DBWARUNG; password=123;"
     Public conn As New OracleConnection(mystring)
     Public perintah As New OracleCommand
-    Public data As New OracleDataAdapter
+    Public dataku As New OracleDataAdapter
     Public ds As New DataSet
+    Dim dt As DataTable
+    Dim adapter As OracleDataAdapter
+    Dim sqlstr As String
+    Dim data As Integer
 
     Public Sub konek()
         If conn.State = ConnectionState.Closed Then
@@ -23,10 +27,7 @@ Module koneksi
 
 
     Public Sub tampildata2()
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+
 
         sqlstr = "SELECT * FROM TBL_PRODUK WHERE STOK_PRODUK is NOT NULL"
         adapter = New OracleDataAdapter(sqlstr, conn)
@@ -43,10 +44,7 @@ Module koneksi
     End Sub
 
     Public Function GetTanggal() As String
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+
         Dim Tanggal As String
 
         sqlstr = "SELECT * FROM TBL_STOKHARIAN order by tanggalstocking desc"
@@ -60,10 +58,7 @@ Module koneksi
     End Function
 
     Public Function getDataPenjualan() As String
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+
         Dim Tanggal As String
 
         sqlstr = "SELECT * FROM TBL_STOKHARIAN order by tanggalstocking desc"
@@ -80,10 +75,7 @@ Module koneksi
 
 
     Public Function getLastIdTransaksi() As String
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+
         Dim idtransaksi As String
 
         sqlstr = "select ID_TRANSAKSI from TBL_TRANSAKSI order by id_transaksi desc"
@@ -98,10 +90,7 @@ Module koneksi
 
 
     Public Function GetDataharian() As String
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+
         Dim dataharian As String
 
         sqlstr = "SELECT * FROM TBL_STOKHARIAN"
@@ -117,10 +106,7 @@ Module koneksi
 
 
     Public Sub tampildata()
-        Dim dt As DataTable
-        Dim adapter As OracleDataAdapter
-        Dim sqlstr As String
-        Dim data As Integer
+
 
         sqlstr = "SELECT * FROM TBL_PRODUK"
         adapter = New OracleDataAdapter(sqlstr, conn)

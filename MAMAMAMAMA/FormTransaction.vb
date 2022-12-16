@@ -32,7 +32,73 @@ Public Class FormTransaction
         End If
     End Sub
 
-    Private Sub ButtonTambah_Click(sender As Object, e As EventArgs) Handles ButtonTambah.Click
+
+    Private Function IdChechk(IDPRODUK As String)
+        Dim NNN As Integer = 0
+        For Each row As DataGridViewRow In DataGridViewMenu.Rows
+            If IDPRODUK = DataGridViewMenu(0, NNN).Value Then
+                IDPRODUK = DataGridViewMenu(3, NNN).Value
+
+            End If
+            NNN += 1
+        Next
+        Return IDPRODUK
+    End Function
+
+    Sub checkout()
+        Dim nn As Integer = 0
+        Dim URUTAN As Integer = 0
+        konek()
+        Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
+
+        'pengurangan stok produk oleh pembelian
+        For Each item As ListViewItem In Me.ListViewTransaksi.Items
+            perintah.CommandType = CommandType.Text
+            Dim idchek As Integer = IdChechk(ListViewTransaksi.Items(URUTAN).SubItems(0).Text)
+            perintah.CommandText = "UPDATE " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_PRODUK" & ControlChars.Quote & " SET STOK_PRODUK = '" & (idchek - ListViewTransaksi.Items(URUTAN).SubItems(3).Text) & "' WHERE ID_PRODUK = '" & ListViewTransaksi.Items(URUTAN).SubItems(0).Text & "'"
+            perintah.Connection = conn
+            perintah.ExecuteNonQuery()
+            URUTAN += 1
+        Next
+
+        'mencari total kolom
+        For Each item As ListViewItem In Me.ListViewTransaksi.Items
+            nn += 1
+        Next
+
+        'Insert TBL_TRANSAKSI VALUE
+        perintah.CommandType = CommandType.Text
+        perintah.CommandText = "INSERT INTO " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_TRANSAKSI" & ControlChars.Quote & "  (JUMLAH_PESANAN,TOTAL_TRANSAKSI,TANGGAL_TRANSAKSI) VALUES
+                                        ('" & nn & "','" & TextBoxTotalSementara.Text & "',to_date('" & myDate & "', 'dd-mm-yyyy'))"
+        perintah.Connection = conn
+        perintah.ExecuteNonQuery()
+
+
+        Dim idtransa As String = getLastIdTransaksi()
+
+        'mencari nilai id_transaksi
+        Try
+            nn = 0
+            For Each item As ListViewItem In Me.ListViewTransaksi.Items
+                perintah.CommandType = CommandType.Text
+                perintah.CommandText = "INSERT INTO " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_DETAIL_TRANSAKSI" & ControlChars.Quote & "  (ID_TRANSAKSI, NOMOR_PESANAN,ID_PRODUK,NAMA_PRODUK, HARGA_PRODUK, JUMLAH,TOTAL_PESANAN) VALUES
+                                        ('" & idtransa & "','" & nn + 1 & "','" & ListViewTransaksi.Items(nn).SubItems(0).Text & "','" & ListViewTransaksi.Items(nn).SubItems(1).Text & "','" & ListViewTransaksi.Items(nn).SubItems(2).Text & "','" & ListViewTransaksi.Items(nn).SubItems(3).Text & "','" & ListViewTransaksi.Items(nn).SubItems(4).Text & "')"
+                perintah.Connection = conn
+                perintah.ExecuteNonQuery()
+                nn += 1
+            Next
+            MsgBox("Data berhasil disimpan", MsgBoxStyle.Information, "Informasi")
+        Catch ex As Exception
+            MsgBox("Data gagal disimpan" + ex.Message, MsgBoxStyle.Critical)
+        End Try
+        conn.Close()
+    End Sub
+
+    Private Sub TextBoxUangPembeli_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUangPembeli.TextChanged
+        TextBoxKembalian.Text = TextBoxUangPembeli.Text - TextBoxTotalSementara.Text
+    End Sub
+
+    Private Sub ButtonTambah_Click_1(sender As Object, e As EventArgs) Handles ButtonTambah.Click
         Dim urutan As Integer = 0
         Dim kondisi As Boolean = False
 
@@ -82,7 +148,7 @@ Public Class FormTransaction
         TextBoxTotalSementara.Text = totalsementara()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub ButtonCheckout_Click(sender As Object, e As EventArgs) Handles ButtonCheckout.Click
         If TextBoxTotalSementara.Text = 0 Then
             MsgBox("Mohon Masukkan Pesanan Pembeli!")
         Else
@@ -100,72 +166,4 @@ Public Class FormTransaction
             End If
         End If
     End Sub
-
-
-
-    Private Function IdChechk(IDPRODUK As String)
-        Dim NNN As Integer = 0
-        For Each row As DataGridViewRow In DataGridViewMenu.Rows
-            If IDPRODUK = DataGridViewMenu(0, NNN).Value Then
-                IDPRODUK = DataGridViewMenu(3, NNN).Value
-
-            End If
-            NNN += 1
-        Next
-        Return IDPRODUK
-    End Function
-
-    Sub checkout()
-        Dim nn As Integer = 0
-        Dim URUTAN As Integer = 0
-        konek()
-        Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
-
-        'pengurangan stok produk oleh pembelian
-        For Each item As ListViewItem In Me.ListViewTransaksi.Items
-            perintah.CommandType = CommandType.Text
-            Dim idchek As Integer = IdChechk(ListViewTransaksi.Items(URUTAN).SubItems(0).Text)
-            perintah.CommandText = "UPDATE " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_PRODUK" & ControlChars.Quote & " SET STOK_PRODUK = '" & (idchek - ListViewTransaksi.Items(URUTAN).SubItems(3).Text) & "' WHERE ID_PRODUK = '" & ListViewTransaksi.Items(URUTAN).SubItems(0).Text & "'"
-            perintah.Connection = conn
-            perintah.ExecuteNonQuery()
-            URUTAN += 1
-        Next
-
-        'mencari total kolom
-        For Each item As ListViewItem In Me.ListViewTransaksi.Items
-            nn += 1
-        Next
-
-        'Insert TBL_TRANSAKSI VALUE
-        perintah.CommandType = CommandType.Text
-        perintah.CommandText = "INSERT INTO " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_TRANSAKSI" & ControlChars.Quote & "  (JUMLAH_PESANAN,TOTAL_TRANSAKSI,TANGGAL_TRANSAKSI) VALUES
-                                        ('" & nn & "','" & TextBoxTotalSementara.Text & "','" & myDate & "')"
-        perintah.Connection = conn
-        perintah.ExecuteNonQuery()
-
-
-        Dim idtransa As String = getLastIdTransaksi()
-
-        'mencari nilai id_transaksi
-        Try
-            nn = 0
-            For Each item As ListViewItem In Me.ListViewTransaksi.Items
-                perintah.CommandType = CommandType.Text
-                perintah.CommandText = "INSERT INTO " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_DETAIL_TRANSAKSI" & ControlChars.Quote & "  (ID_TRANSAKSI, NOMOR_PESANAN,ID_PRODUK,NAMA_PRODUK, HARGA_PRODUK, JUMLAH,TOTAL_PESANAN) VALUES
-                                        ('" & idtransa & "','" & nn + 1 & "','" & ListViewTransaksi.Items(nn).SubItems(0).Text & "','" & ListViewTransaksi.Items(nn).SubItems(1).Text & "','" & ListViewTransaksi.Items(nn).SubItems(2).Text & "','" & ListViewTransaksi.Items(nn).SubItems(3).Text & "','" & ListViewTransaksi.Items(nn).SubItems(4).Text & "')"
-                perintah.Connection = conn
-                perintah.ExecuteNonQuery()
-                nn += 1
-            Next
-            MsgBox("Data berhasil disimpan", MsgBoxStyle.Information, "Informasi")
-        Catch ex As Exception
-            MsgBox("Data gagal disimpan" + ex.Message, MsgBoxStyle.Critical)
-        End Try
-        conn.Close()
-    End Sub
-
-    Private Sub TextBoxUangPembeli_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUangPembeli.TextChanged
-        TextBoxKembalian.Text = TextBoxUangPembeli.Text - TextBoxTotalSementara.Text
-    End Sub
-
 End Class

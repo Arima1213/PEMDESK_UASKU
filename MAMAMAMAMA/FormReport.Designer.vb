@@ -22,14 +22,21 @@ Partial Class FormReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Public Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim LPoint8 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint9 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint10 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint11 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint12 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint13 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint14 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim ChartFont1 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont2 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont3 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont4 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid1 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick1 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont5 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid2 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick2 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont6 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid3 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel1 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont7 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick3 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont8 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont9 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont10 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont11 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
@@ -45,11 +52,23 @@ Partial Class FormReport
         Dim ChartFont15 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim Tick6 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
         Dim ChartFont16 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Me.TBLTRANSAKSIBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Dim ChartFont17 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont18 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont19 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont20 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid7 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick7 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont21 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid8 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick8 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont22 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid9 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel3 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont23 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick9 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont24 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Me.DataSetKu = New UAS_WARUNG.DataSetKu()
-        Me.TBL_TRANSAKSITableAdapter = New UAS_WARUNG.DataSetKuTableAdapters.TBL_TRANSAKSITableAdapter()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Label_totalPemasukanHariini = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -58,12 +77,9 @@ Partial Class FormReport
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LABEL_TOTAL_PENJUALAN = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.GunaAreaDataset2 = New Guna.Charts.WinForms.GunaAreaDataset()
-        Me.TBLDETAILTRANSAKSIBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TBLDETAILTRANSAKSIBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TBL_DETAIL_TRANSAKSITableAdapter = New UAS_WARUNG.DataSetKuTableAdapters.TBL_DETAIL_TRANSAKSITableAdapter()
         Me.Guna2CustomGradientPanel4 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.GunaChart1 = New Guna.Charts.WinForms.GunaChart()
         Me.labelMenuTerjualMingguIni = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CustomGradientPanel3 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
@@ -77,50 +93,30 @@ Partial Class FormReport
         Me.GunaPieDataset1 = New Guna.Charts.WinForms.GunaPieDataset()
         Me.GunaAreaDataset1 = New Guna.Charts.WinForms.GunaAreaDataset()
         Me.GunaLineDataset1 = New Guna.Charts.WinForms.GunaLineDataset()
-        Me.TBLTRANSAKSIBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TBLDETAILTRANSAKSIBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TBLTRANSAKSIBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TBLTRANSAKSIBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SYSC007256BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TBLTRANSAKSIBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
-        CType(Me.TBLTRANSAKSIBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2CustomGradientPanel7 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.GunaBarDataset1 = New Guna.Charts.WinForms.GunaBarDataset()
+        Me.GunaChart3 = New Guna.Charts.WinForms.GunaChart()
         CType(Me.DataSetKu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2CustomGradientPanel2.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TBLDETAILTRANSAKSIBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TBLDETAILTRANSAKSIBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2CustomGradientPanel4.SuspendLayout()
         Me.Guna2CustomGradientPanel3.SuspendLayout()
         Me.Guna2CustomGradientPanel5.SuspendLayout()
         Me.Guna2CustomGradientPanel6.SuspendLayout()
-        CType(Me.TBLTRANSAKSIBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TBLDETAILTRANSAKSIBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TBLTRANSAKSIBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TBLTRANSAKSIBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SYSC007256BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TBLTRANSAKSIBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2CustomGradientPanel7.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'TBLTRANSAKSIBindingSource
-        '
-        Me.TBLTRANSAKSIBindingSource.DataMember = "TBL_TRANSAKSI"
-        Me.TBLTRANSAKSIBindingSource.DataSource = Me.DataSetKu
         '
         'DataSetKu
         '
         Me.DataSetKu.DataSetName = "DataSetKu"
         Me.DataSetKu.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TBL_TRANSAKSITableAdapter
-        '
-        Me.TBL_TRANSAKSITableAdapter.ClearBeforeFill = True
-        '
         'Guna2CustomGradientPanel1
         '
         Me.Guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CustomGradientPanel1.BorderRadius = 20
-        Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Label_totalPemasukanHariini)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2HtmlLabel1)
@@ -134,21 +130,11 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(311, 124)
         Me.Guna2CustomGradientPanel1.TabIndex = 5
         '
-        'Guna2HtmlLabel4
-        '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(18, 91)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(101, 21)
-        Me.Guna2HtmlLabel4.TabIndex = 3
-        Me.Guna2HtmlLabel4.Text = "Guna2HtmlLabel4"
-        '
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Poppins", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(18, 17)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(18, 22)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(138, 21)
         Me.Guna2HtmlLabel3.TabIndex = 2
@@ -158,7 +144,7 @@ Partial Class FormReport
         '
         Me.Label_totalPemasukanHariini.BackColor = System.Drawing.Color.Transparent
         Me.Label_totalPemasukanHariini.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_totalPemasukanHariini.Location = New System.Drawing.Point(18, 31)
+        Me.Label_totalPemasukanHariini.Location = New System.Drawing.Point(18, 38)
         Me.Label_totalPemasukanHariini.Name = "Label_totalPemasukanHariini"
         Me.Label_totalPemasukanHariini.Size = New System.Drawing.Size(186, 52)
         Me.Label_totalPemasukanHariini.TabIndex = 1
@@ -244,46 +230,12 @@ Partial Class FormReport
         Me.Guna2PictureBox1.TabStop = False
         Me.Guna2PictureBox1.UseTransparentBackground = True
         '
-        'GunaAreaDataset2
-        '
-        Me.GunaAreaDataset2.BorderColor = System.Drawing.Color.Empty
-        LPoint8.Label = "Senin"
-        LPoint8.Y = 0R
-        LPoint9.Label = "Selasa"
-        LPoint9.Y = 0R
-        LPoint10.Label = "Rabu"
-        LPoint10.Y = 12.0R
-        LPoint11.Label = "Kamis"
-        LPoint11.Y = 11.0R
-        LPoint12.Label = "Jumat"
-        LPoint12.Y = 0R
-        LPoint13.Label = "Sabtu"
-        LPoint13.Y = 0R
-        LPoint14.Label = "Minggu"
-        LPoint14.Y = 12.0R
-        Me.GunaAreaDataset2.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint8, LPoint9, LPoint10, LPoint11, LPoint12, LPoint13, LPoint14})
-        Me.GunaAreaDataset2.FillColor = System.Drawing.Color.Empty
-        Me.GunaAreaDataset2.Label = "Penjualan"
-        '
-        'TBLDETAILTRANSAKSIBindingSource1
-        '
-        Me.TBLDETAILTRANSAKSIBindingSource1.DataMember = "TBL_DETAIL_TRANSAKSI"
-        Me.TBLDETAILTRANSAKSIBindingSource1.DataSource = Me.DataSetKu
-        '
-        'TBLDETAILTRANSAKSIBindingSource
-        '
-        Me.TBLDETAILTRANSAKSIBindingSource.DataMember = "TBL_DETAIL_TRANSAKSI"
-        Me.TBLDETAILTRANSAKSIBindingSource.DataSource = Me.DataSetKu
-        '
-        'TBL_DETAIL_TRANSAKSITableAdapter
-        '
-        Me.TBL_DETAIL_TRANSAKSITableAdapter.ClearBeforeFill = True
-        '
         'Guna2CustomGradientPanel4
         '
         Me.Guna2CustomGradientPanel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CustomGradientPanel4.BorderRadius = 20
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.Guna2HtmlLabel10)
+        Me.Guna2CustomGradientPanel4.Controls.Add(Me.GunaChart1)
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.labelMenuTerjualMingguIni)
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Guna2CustomGradientPanel4.Location = New System.Drawing.Point(195, 167)
@@ -307,6 +259,41 @@ Partial Class FormReport
         Me.Guna2HtmlLabel10.TabIndex = 4
         Me.Guna2HtmlLabel10.Text = "Menu Terjual Minggu ini"
         Me.Guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        '
+        'GunaChart1
+        '
+        Me.GunaChart1.BackColor = System.Drawing.Color.White
+        ChartFont1.FontName = "Arial"
+        Me.GunaChart1.Legend.LabelFont = ChartFont1
+        Me.GunaChart1.Location = New System.Drawing.Point(-149, 148)
+        Me.GunaChart1.Name = "GunaChart1"
+        Me.GunaChart1.Size = New System.Drawing.Size(385, 144)
+        Me.GunaChart1.TabIndex = 10
+        ChartFont2.FontName = "Arial"
+        ChartFont2.Size = 12
+        ChartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart1.Title.Font = ChartFont2
+        ChartFont3.FontName = "Arial"
+        Me.GunaChart1.Tooltips.BodyFont = ChartFont3
+        ChartFont4.FontName = "Arial"
+        ChartFont4.Size = 9
+        ChartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart1.Tooltips.TitleFont = ChartFont4
+        Me.GunaChart1.XAxes.GridLines = Grid1
+        ChartFont5.FontName = "Arial"
+        Tick1.Font = ChartFont5
+        Me.GunaChart1.XAxes.Ticks = Tick1
+        Me.GunaChart1.YAxes.GridLines = Grid2
+        ChartFont6.FontName = "Arial"
+        Tick2.Font = ChartFont6
+        Me.GunaChart1.YAxes.Ticks = Tick2
+        Me.GunaChart1.ZAxes.GridLines = Grid3
+        ChartFont7.FontName = "Arial"
+        PointLabel1.Font = ChartFont7
+        Me.GunaChart1.ZAxes.PointLabels = PointLabel1
+        ChartFont8.FontName = "Arial"
+        Tick3.Font = ChartFont8
+        Me.GunaChart1.ZAxes.Ticks = Tick3
         '
         'labelMenuTerjualMingguIni
         '
@@ -477,35 +464,71 @@ Partial Class FormReport
         Me.GunaLineDataset1.FillColor = System.Drawing.Color.Empty
         Me.GunaLineDataset1.Label = "Line1"
         '
-        'TBLTRANSAKSIBindingSource3
+        'Guna2CustomGradientPanel7
         '
-        Me.TBLTRANSAKSIBindingSource3.DataMember = "TBL_TRANSAKSI"
-        Me.TBLTRANSAKSIBindingSource3.DataSource = Me.DataSetKu
+        Me.Guna2CustomGradientPanel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2CustomGradientPanel7.BorderRadius = 20
+        Me.Guna2CustomGradientPanel7.Controls.Add(Me.GunaChart3)
+        Me.Guna2CustomGradientPanel7.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2CustomGradientPanel7.Location = New System.Drawing.Point(30, 311)
+        Me.Guna2CustomGradientPanel7.Name = "Guna2CustomGradientPanel7"
+        Me.Guna2CustomGradientPanel7.Quality = 20
+        Me.Guna2CustomGradientPanel7.ShadowDecoration.BorderRadius = 20
+        Me.Guna2CustomGradientPanel7.ShadowDecoration.Depth = 5
+        Me.Guna2CustomGradientPanel7.ShadowDecoration.Enabled = True
+        Me.Guna2CustomGradientPanel7.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 0, 2, 10)
+        Me.Guna2CustomGradientPanel7.Size = New System.Drawing.Size(417, 161)
+        Me.Guna2CustomGradientPanel7.TabIndex = 9
         '
-        'TBLDETAILTRANSAKSIBindingSource2
+        'Guna2HtmlLabel2
         '
-        Me.TBLDETAILTRANSAKSIBindingSource2.DataMember = "TBL_DETAIL_TRANSAKSI"
-        Me.TBLDETAILTRANSAKSIBindingSource2.DataSource = Me.DataSetKu
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(69, 54)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(3, 2)
+        Me.Guna2HtmlLabel2.TabIndex = 0
+        Me.Guna2HtmlLabel2.Text = Nothing
         '
-        'TBLTRANSAKSIBindingSource1
+        'GunaBarDataset1
         '
-        Me.TBLTRANSAKSIBindingSource1.DataMember = "TBL_TRANSAKSI"
-        Me.TBLTRANSAKSIBindingSource1.DataSource = Me.DataSetKu
+        Me.GunaBarDataset1.Label = "Bar1"
+        Me.GunaBarDataset1.TargetChart = Me.GunaChart3
         '
-        'TBLTRANSAKSIBindingSource2
+        'GunaChart3
         '
-        Me.TBLTRANSAKSIBindingSource2.DataMember = "TBL_TRANSAKSI"
-        Me.TBLTRANSAKSIBindingSource2.DataSource = Me.DataSetKu
-        '
-        'SYSC007256BindingSource
-        '
-        Me.SYSC007256BindingSource.DataMember = "SYS_C007256"
-        Me.SYSC007256BindingSource.DataSource = Me.TBLTRANSAKSIBindingSource
-        '
-        'TBLTRANSAKSIBindingSource4
-        '
-        Me.TBLTRANSAKSIBindingSource4.DataMember = "TBL_TRANSAKSI"
-        Me.TBLTRANSAKSIBindingSource4.DataSource = Me.DataSetKu
+        Me.GunaChart3.BackColor = System.Drawing.Color.White
+        Me.GunaChart3.Datasets.AddRange(New Guna.Charts.Interfaces.IGunaDataset() {Me.GunaBarDataset1})
+        ChartFont17.FontName = "Arial"
+        Me.GunaChart3.Legend.LabelFont = ChartFont17
+        Me.GunaChart3.Location = New System.Drawing.Point(12, 4)
+        Me.GunaChart3.Name = "GunaChart3"
+        Me.GunaChart3.Size = New System.Drawing.Size(389, 153)
+        Me.GunaChart3.TabIndex = 1
+        ChartFont18.FontName = "Arial"
+        ChartFont18.Size = 12
+        ChartFont18.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart3.Title.Font = ChartFont18
+        ChartFont19.FontName = "Arial"
+        Me.GunaChart3.Tooltips.BodyFont = ChartFont19
+        ChartFont20.FontName = "Arial"
+        ChartFont20.Size = 9
+        ChartFont20.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart3.Tooltips.TitleFont = ChartFont20
+        Me.GunaChart3.XAxes.GridLines = Grid7
+        ChartFont21.FontName = "Arial"
+        Tick7.Font = ChartFont21
+        Me.GunaChart3.XAxes.Ticks = Tick7
+        Me.GunaChart3.YAxes.GridLines = Grid8
+        ChartFont22.FontName = "Arial"
+        Tick8.Font = ChartFont22
+        Me.GunaChart3.YAxes.Ticks = Tick8
+        Me.GunaChart3.ZAxes.GridLines = Grid9
+        ChartFont23.FontName = "Arial"
+        PointLabel3.Font = ChartFont23
+        Me.GunaChart3.ZAxes.PointLabels = PointLabel3
+        ChartFont24.FontName = "Arial"
+        Tick9.Font = ChartFont24
+        Me.GunaChart3.ZAxes.Ticks = Tick9
         '
         'FormReport
         '
@@ -518,18 +541,16 @@ Partial Class FormReport
         Me.Controls.Add(Me.Guna2CustomGradientPanel2)
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)
         Me.Controls.Add(Me.Guna2CustomGradientPanel6)
+        Me.Controls.Add(Me.Guna2CustomGradientPanel7)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormReport"
         Me.Text = "Form2"
-        CType(Me.TBLTRANSAKSIBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSetKu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2CustomGradientPanel1.ResumeLayout(False)
         Me.Guna2CustomGradientPanel1.PerformLayout()
         Me.Guna2CustomGradientPanel2.ResumeLayout(False)
         Me.Guna2CustomGradientPanel2.PerformLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TBLDETAILTRANSAKSIBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TBLDETAILTRANSAKSIBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2CustomGradientPanel4.ResumeLayout(False)
         Me.Guna2CustomGradientPanel4.PerformLayout()
         Me.Guna2CustomGradientPanel3.ResumeLayout(False)
@@ -537,20 +558,13 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel5.ResumeLayout(False)
         Me.Guna2CustomGradientPanel5.PerformLayout()
         Me.Guna2CustomGradientPanel6.ResumeLayout(False)
-        CType(Me.TBLTRANSAKSIBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TBLDETAILTRANSAKSIBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TBLTRANSAKSIBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TBLTRANSAKSIBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SYSC007256BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TBLTRANSAKSIBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2CustomGradientPanel7.ResumeLayout(False)
+        Me.Guna2CustomGradientPanel7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents DataSetKu As DataSetKu
-    Friend WithEvents TBLTRANSAKSIBindingSource As BindingSource
-    Friend WithEvents TBL_TRANSAKSITableAdapter As DataSetKuTableAdapters.TBL_TRANSAKSITableAdapter
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Label_totalPemasukanHariini As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -559,10 +573,6 @@ Partial Class FormReport
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents LABEL_TOTAL_PENJUALAN As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents GunaAreaDataset2 As Guna.Charts.WinForms.GunaAreaDataset
-    Friend WithEvents TBLDETAILTRANSAKSIBindingSource As BindingSource
-    Friend WithEvents TBL_DETAIL_TRANSAKSITableAdapter As DataSetKuTableAdapters.TBL_DETAIL_TRANSAKSITableAdapter
-    Friend WithEvents TBLDETAILTRANSAKSIBindingSource1 As BindingSource
     Friend WithEvents Guna2CustomGradientPanel4 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2CustomGradientPanel3 As Guna.UI2.WinForms.Guna2CustomGradientPanel
@@ -578,10 +588,9 @@ Partial Class FormReport
     Friend WithEvents GunaAreaDataset1 As Guna.Charts.WinForms.GunaAreaDataset
     Friend WithEvents GunaChart2 As Guna.Charts.WinForms.GunaChart
     Friend WithEvents GunaLineDataset1 As Guna.Charts.WinForms.GunaLineDataset
-    Friend WithEvents TBLTRANSAKSIBindingSource1 As BindingSource
-    Friend WithEvents TBLDETAILTRANSAKSIBindingSource2 As BindingSource
-    Friend WithEvents TBLTRANSAKSIBindingSource2 As BindingSource
-    Friend WithEvents TBLTRANSAKSIBindingSource3 As BindingSource
-    Friend WithEvents SYSC007256BindingSource As BindingSource
-    Friend WithEvents TBLTRANSAKSIBindingSource4 As BindingSource
+    Friend WithEvents GunaChart1 As Guna.Charts.WinForms.GunaChart
+    Friend WithEvents Guna2CustomGradientPanel7 As Guna.UI2.WinForms.Guna2CustomGradientPanel
+    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents GunaChart3 As Guna.Charts.WinForms.GunaChart
+    Friend WithEvents GunaBarDataset1 As Guna.Charts.WinForms.GunaBarDataset
 End Class
