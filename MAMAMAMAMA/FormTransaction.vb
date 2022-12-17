@@ -130,7 +130,7 @@ Public Class FormTransaction
         conn.Close()
     End Sub
 
-    Private Sub TextBoxUangPembeli_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUangPembeli.TextChanged
+    Private Sub TextBoxUangPembeli_TextChanged(sender As Object, e As EventArgs)
         TextBoxKembalian.Text = TextBoxUangPembeli.Text - TextBoxTotalSementara.Text
     End Sub
 

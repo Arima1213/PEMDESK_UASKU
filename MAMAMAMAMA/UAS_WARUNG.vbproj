@@ -249,9 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -300,15 +300,11 @@
     <None Include="Resources\CHIP-transformed %281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CHIP-transformed.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\CHIP-transformed %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bgku.jpg" />
-    <Content Include="Resources\giphy.gif" />
-    <None Include="Resources\bgku1.jpg" />
+    <None Include="Resources\mybg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
