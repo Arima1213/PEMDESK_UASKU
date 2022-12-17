@@ -1,7 +1,13 @@
 ﻿
 
+Imports TheArtOfDevHtmlRenderer.Adapters
+
 Public Class FormWarehouse
     Dim ff As Integer
+    Dim dt As DataTable
+    Dim adapter As OracleDataAdapter
+    Dim sqlstr As String
+    Dim data As Integer
 
     Private Sub FormWarehouse_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'DataSetKu.TBL_PRODUK' table. You can move, or remove it, as needed.
@@ -10,6 +16,20 @@ Public Class FormWarehouse
         Labeltanggal.Text = GetTanggal()
 
     End Sub
+
+    Public Function GetTanggal() As String
+
+        Dim Tanggal As String
+
+        sqlstr = "SELECT * FROM TBL_STOKHARIAN order by tanggalstocking desc"
+        adapter = New OracleDataAdapter(sqlstr, conn)
+        dt = New DataTable
+        data = adapter.Fill(dt)
+        If data > 0 Then
+            Tanggal = dt.Rows(0)(1).ToString()
+        End If
+        Return Tanggal
+    End Function
 
     Private Sub bersih()
         TextBoxStok.Text = ""
@@ -21,6 +41,19 @@ Public Class FormWarehouse
         FormUtama.ButtonWarehouse.PerformClick()
 
     End Sub
+
+    Public Function GetDataharian() As String
+
+        Dim dataharian As String
+        sqlstr = "SELECT * FROM TBL_STOKHARIAN"
+        adapter = New OracleDataAdapter(sqlstr, conn)
+        dt = New DataTable
+        Data = adapter.Fill(dt)
+        If Data > 0 Then
+            dataharian = dt.Rows(0)(0).ToString()
+        End If
+        Return dataharian
+    End Function
 
     Private Sub ButtonSimpan_Click(sender As Object, e As EventArgs) Handles ButtonSimpan.Click
         koneksi.konek()

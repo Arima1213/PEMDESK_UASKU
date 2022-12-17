@@ -2,6 +2,10 @@
 Public Class FormTransaction
     Dim ff As Integer
     Dim id_pembelian As String
+    Dim dt As DataTable
+    Dim adapter As OracleDataAdapter
+    Dim sqlstr As String
+    Dim data As Integer
 
 
 
@@ -12,6 +16,24 @@ Public Class FormTransaction
         TextBoxTotalSementara.Text = 0
 
     End Sub
+
+    Public Sub tampildata2()
+
+
+        sqlstr = "SELECT * FROM TBL_PRODUK WHERE STOK_PRODUK is NOT NULL"
+        adapter = New OracleDataAdapter(sqlstr, conn)
+        dt = New DataTable
+        data = adapter.Fill(dt)
+
+        If data > 0 Then
+            FormWarehouse.DataGridViewMenu.DataSource = dt
+            FormWarehouse.DataGridViewMenu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
+        Else
+            FormWarehouse.DataGridViewMenu.DataSource = Nothing
+        End If
+
+    End Sub
+
     Public Function totalsementara()
         Dim mm As Integer = 0
         Dim ChaceTotal As Integer
@@ -20,6 +42,20 @@ Public Class FormTransaction
             mm += 1
         Next
         Return ChaceTotal
+    End Function
+
+    Public Function getLastIdTransaksi() As String
+
+        Dim idtransaksi As String
+
+        sqlstr = "select ID_TRANSAKSI from TBL_TRANSAKSI order by id_transaksi desc"
+        adapter = New OracleDataAdapter(sqlstr, conn)
+        dt = New DataTable
+        data = adapter.Fill(dt)
+        If data > 0 Then
+            idtransaksi = dt.Rows(0)(0).ToString()
+        End If
+        Return idtransaksi
     End Function
 
     Private Sub DataGridViewMenu_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewMenu.CellClick

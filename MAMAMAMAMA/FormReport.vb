@@ -32,14 +32,14 @@ Public Class FormReport
             labelMenuTerjualMingguIni.Text = GetnilaiPenjualanMingguIni()
         End If
 
-        loadLine()
+        LoadHorizontalBar()
 
-        loadPie()
+        LoadPie()
 
 
     End Sub
 
-    Sub loadPie()
+    Sub LoadPie()
         Dim urutan As Integer = 0
         Dim data() = getAllMenuData()
         Dim nilai() As Integer = getAllMenuJumlah()
@@ -50,13 +50,13 @@ Public Class FormReport
 
 
     End Sub
-    Sub loadLine()
+    Sub LoadHorizontalBar()
         Dim urutan As Integer = 0
         Dim data() = Get7hariPenjualan_hari()
         Dim nilai() As Integer = Get7hariPenjualan_total()
 
         For urutan = 0 To 4
-            GunaLineDataset1.DataPoints.Add(data(urutan), nilai(urutan))
+            GunaHorizontalBarDataset1.DataPoints.Add(data(urutan), nilai(urutan))
         Next
 
 
@@ -76,7 +76,7 @@ Public Class FormReport
         Return Menuku
     End Function
 
-    Public Function getAllMenuData()
+    Public Function GetAllMenuData()
 
         Dim menu(0 To 5) As String
         Dim urutan As Integer = 0
@@ -91,7 +91,7 @@ Public Class FormReport
         Return menu
     End Function
 
-    Public Function getAllMenuJumlah()
+    Public Function GetAllMenuJumlah()
 
         Dim menu(0 To 5) As Integer
         Dim urutan As Integer = 0
