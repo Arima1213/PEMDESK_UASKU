@@ -89,8 +89,8 @@ Partial Class FormUtama
         Me.ButtonDashboard.FillColor2 = System.Drawing.Color.Transparent
         Me.ButtonDashboard.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ButtonDashboard.ForeColor = System.Drawing.Color.Black
-        Me.ButtonDashboard.HoverState.FillColor = System.Drawing.Color.MediumBlue
-        Me.ButtonDashboard.HoverState.FillColor2 = System.Drawing.Color.Navy
+        Me.ButtonDashboard.HoverState.FillColor = System.Drawing.Color.Navy
+        Me.ButtonDashboard.HoverState.FillColor2 = System.Drawing.Color.MediumBlue
         Me.ButtonDashboard.HoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDashboard.HoverState.ForeColor = System.Drawing.Color.White
         Me.ButtonDashboard.Location = New System.Drawing.Point(760, 9)
@@ -118,8 +118,8 @@ Partial Class FormUtama
         Me.ButtonWarehouse.FillColor2 = System.Drawing.Color.Transparent
         Me.ButtonWarehouse.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ButtonWarehouse.ForeColor = System.Drawing.Color.Black
-        Me.ButtonWarehouse.HoverState.FillColor = System.Drawing.Color.MediumBlue
-        Me.ButtonWarehouse.HoverState.FillColor2 = System.Drawing.Color.Navy
+        Me.ButtonWarehouse.HoverState.FillColor = System.Drawing.Color.Navy
+        Me.ButtonWarehouse.HoverState.FillColor2 = System.Drawing.Color.MediumBlue
         Me.ButtonWarehouse.HoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonWarehouse.HoverState.ForeColor = System.Drawing.Color.White
         Me.ButtonWarehouse.Location = New System.Drawing.Point(657, 9)
@@ -159,8 +159,8 @@ Partial Class FormUtama
         Me.ButtonTransaction.FillColor2 = System.Drawing.Color.Transparent
         Me.ButtonTransaction.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ButtonTransaction.ForeColor = System.Drawing.Color.Black
-        Me.ButtonTransaction.HoverState.FillColor = System.Drawing.Color.MediumBlue
-        Me.ButtonTransaction.HoverState.FillColor2 = System.Drawing.Color.Navy
+        Me.ButtonTransaction.HoverState.FillColor = System.Drawing.Color.Navy
+        Me.ButtonTransaction.HoverState.FillColor2 = System.Drawing.Color.MediumBlue
         Me.ButtonTransaction.HoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonTransaction.HoverState.ForeColor = System.Drawing.Color.White
         Me.ButtonTransaction.Location = New System.Drawing.Point(554, 9)
@@ -184,6 +184,7 @@ Partial Class FormUtama
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(871, 553)
         Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.Panel1)

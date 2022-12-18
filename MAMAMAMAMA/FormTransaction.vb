@@ -128,10 +128,6 @@
         conn.Close()
     End Sub
 
-    Private Sub TextBoxUangPembeli_TextChanged(sender As Object, e As EventArgs)
-        TextBoxKembalian.Text = TextBoxUangPembeli.Text - TextBoxTotalSementara.Text
-    End Sub
-
     Private Sub ButtonTambah_Click_1(sender As Object, e As EventArgs) Handles ButtonTambah.Click
         Dim urutan As Integer = 0
         Dim kondisi As Boolean = False
@@ -199,5 +195,26 @@
                 End If
             End If
         End If
+    End Sub
+
+    Private Sub TextBoxUangPembeli_TextChanged_1(sender As Object, e As EventArgs) Handles TextBoxUangPembeli.TextChanged
+        If TextBoxUangPembeli.Text = "" Then
+        Else
+            TextBoxKembalian.Text = (TextBoxUangPembeli.Text - TextBoxTotalSementara.Text).ToString
+        End If
+
+    End Sub
+    Private Sub TextBoxUangPembeli_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBoxUangPembeli.KeyPress
+
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
     End Sub
 End Class

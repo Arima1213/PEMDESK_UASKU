@@ -22,6 +22,7 @@ Partial Class FormLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
         Me.TextBoxUsername = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TextBoxPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -87,17 +88,17 @@ Partial Class FormLogin
         Me.Guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.Green
-        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.Teal
+        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.Navy
+        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.BlueViolet
         Me.Guna2GradientButton1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.Green
+        Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.DarkCyan
+        Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.Navy
         Me.Guna2GradientButton1.HoverState.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2GradientButton1.Location = New System.Drawing.Point(56, 198)
         Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
         Me.Guna2GradientButton1.ShadowDecoration.BorderRadius = 10
-        Me.Guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.Lime
+        Me.Guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.Navy
         Me.Guna2GradientButton1.ShadowDecoration.Depth = 3
         Me.Guna2GradientButton1.ShadowDecoration.Enabled = True
         Me.Guna2GradientButton1.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
@@ -166,7 +167,7 @@ Partial Class FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.UAS_WARUNG.My.Resources.Resources.bgku
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Guna2CustomGradientPanel5)

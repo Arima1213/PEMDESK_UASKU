@@ -23,10 +23,10 @@ Partial Class FormTransaction
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataSetKu = New UAS_WARUNG.DataSetKu()
         Me.TBL_PRODUKTableAdapter = New UAS_WARUNG.DataSetKuTableAdapters.TBL_PRODUKTableAdapter()
         Me.ButtonTambah = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -43,15 +43,15 @@ Partial Class FormTransaction
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ButtonCheckout = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.DataGridViewMenu = New System.Windows.Forms.DataGridView()
-        Me.TBLPRODUKBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.TextBoxIdMenu2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.TextBoxNamaMenu2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.TextBoxHargaMenu2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.IDPRODUKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NAMAPRODUKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HARGAPRODUKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.STOKPRODUKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TBLPRODUKBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.TextBoxHargaMenu2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TextBoxNamaMenu2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TextBoxIdMenu2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.TextBoxKembalian = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TextBoxUangPembeli = New Guna.UI2.WinForms.Guna2TextBox()
@@ -85,17 +85,17 @@ Partial Class FormTransaction
         Me.ButtonTambah.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ButtonTambah.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ButtonTambah.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.ButtonTambah.FillColor = System.Drawing.Color.Green
-        Me.ButtonTambah.FillColor2 = System.Drawing.Color.Teal
+        Me.ButtonTambah.FillColor = System.Drawing.Color.Navy
+        Me.ButtonTambah.FillColor2 = System.Drawing.Color.SlateBlue
         Me.ButtonTambah.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonTambah.ForeColor = System.Drawing.Color.White
-        Me.ButtonTambah.HoverState.FillColor = System.Drawing.Color.SpringGreen
-        Me.ButtonTambah.HoverState.FillColor2 = System.Drawing.Color.Green
+        Me.ButtonTambah.HoverState.FillColor = System.Drawing.Color.Navy
+        Me.ButtonTambah.HoverState.FillColor2 = System.Drawing.Color.Navy
         Me.ButtonTambah.HoverState.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonTambah.Location = New System.Drawing.Point(202, 159)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.ShadowDecoration.BorderRadius = 10
-        Me.ButtonTambah.ShadowDecoration.Color = System.Drawing.Color.Lime
+        Me.ButtonTambah.ShadowDecoration.Color = System.Drawing.Color.CornflowerBlue
         Me.ButtonTambah.ShadowDecoration.Depth = 3
         Me.ButtonTambah.ShadowDecoration.Enabled = True
         Me.ButtonTambah.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
@@ -211,17 +211,17 @@ Partial Class FormTransaction
         Me.ButtonCheckout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ButtonCheckout.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ButtonCheckout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.ButtonCheckout.FillColor = System.Drawing.Color.Green
-        Me.ButtonCheckout.FillColor2 = System.Drawing.Color.Teal
+        Me.ButtonCheckout.FillColor = System.Drawing.Color.Navy
+        Me.ButtonCheckout.FillColor2 = System.Drawing.Color.SlateBlue
         Me.ButtonCheckout.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonCheckout.ForeColor = System.Drawing.Color.White
-        Me.ButtonCheckout.HoverState.FillColor = System.Drawing.Color.SpringGreen
-        Me.ButtonCheckout.HoverState.FillColor2 = System.Drawing.Color.Green
+        Me.ButtonCheckout.HoverState.FillColor = System.Drawing.Color.Navy
+        Me.ButtonCheckout.HoverState.FillColor2 = System.Drawing.Color.Navy
         Me.ButtonCheckout.HoverState.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonCheckout.Location = New System.Drawing.Point(202, 173)
         Me.ButtonCheckout.Name = "ButtonCheckout"
         Me.ButtonCheckout.ShadowDecoration.BorderRadius = 10
-        Me.ButtonCheckout.ShadowDecoration.Color = System.Drawing.Color.Lime
+        Me.ButtonCheckout.ShadowDecoration.Color = System.Drawing.Color.CornflowerBlue
         Me.ButtonCheckout.ShadowDecoration.Depth = 3
         Me.ButtonCheckout.ShadowDecoration.Enabled = True
         Me.ButtonCheckout.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
@@ -236,144 +236,54 @@ Partial Class FormTransaction
         Me.DataGridViewMenu.AllowUserToDeleteRows = False
         Me.DataGridViewMenu.AllowUserToResizeColumns = False
         Me.DataGridViewMenu.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
-        Me.DataGridViewMenu.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
+        Me.DataGridViewMenu.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridViewMenu.AutoGenerateColumns = False
         Me.DataGridViewMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewMenu.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.DataGridViewMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DataGridViewMenu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.DataGridViewMenu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridViewMenu.ColumnHeadersHeight = 21
         Me.DataGridViewMenu.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDPRODUKDataGridViewTextBoxColumn, Me.NAMAPRODUKDataGridViewTextBoxColumn, Me.HARGAPRODUKDataGridViewTextBoxColumn, Me.STOKPRODUKDataGridViewTextBoxColumn})
         Me.DataGridViewMenu.DataSource = Me.TBLPRODUKBindingSource
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewMenu.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewMenu.DefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridViewMenu.EnableHeadersVisualStyles = False
         Me.DataGridViewMenu.Location = New System.Drawing.Point(12, 12)
         Me.DataGridViewMenu.MultiSelect = False
         Me.DataGridViewMenu.Name = "DataGridViewMenu"
         Me.DataGridViewMenu.ReadOnly = True
         Me.DataGridViewMenu.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewMenu.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewMenu.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.DataGridViewMenu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewMenu.Size = New System.Drawing.Size(412, 211)
         Me.DataGridViewMenu.TabIndex = 21
-        '
-        'TBLPRODUKBindingSource
-        '
-        Me.TBLPRODUKBindingSource.DataMember = "TBL_PRODUK"
-        Me.TBLPRODUKBindingSource.DataSource = Me.DataSetKu
-        '
-        'Guna2GroupBox1
-        '
-        Me.Guna2GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.BorderRadius = 20
-        Me.Guna2GroupBox1.BorderThickness = 0
-        Me.Guna2GroupBox1.Controls.Add(Me.TextBoxHargaMenu2)
-        Me.Guna2GroupBox1.Controls.Add(Me.TextBoxNamaMenu2)
-        Me.Guna2GroupBox1.Controls.Add(Me.TextBoxIdMenu2)
-        Me.Guna2GroupBox1.Controls.Add(Me.ButtonTambah)
-        Me.Guna2GroupBox1.Controls.Add(Me.Label6)
-        Me.Guna2GroupBox1.Controls.Add(Me.NumericUpDown1)
-        Me.Guna2GroupBox1.Controls.Add(Me.Label7)
-        Me.Guna2GroupBox1.Controls.Add(Me.Label1)
-        Me.Guna2GroupBox1.Controls.Add(Me.Label5)
-        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(440, 12)
-        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(403, 211)
-        Me.Guna2GroupBox1.TabIndex = 20
-        Me.Guna2GroupBox1.Text = "Tambah Menu"
-        Me.Guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Guna2GroupBox1.UseTransparentBackground = True
-        '
-        'TextBoxIdMenu2
-        '
-        Me.TextBoxIdMenu2.BorderRadius = 5
-        Me.TextBoxIdMenu2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxIdMenu2.DefaultText = ""
-        Me.TextBoxIdMenu2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TextBoxIdMenu2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TextBoxIdMenu2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBoxIdMenu2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBoxIdMenu2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxIdMenu2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.TextBoxIdMenu2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxIdMenu2.Location = New System.Drawing.Point(121, 49)
-        Me.TextBoxIdMenu2.Name = "TextBoxIdMenu2"
-        Me.TextBoxIdMenu2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TextBoxIdMenu2.PlaceholderText = ""
-        Me.TextBoxIdMenu2.SelectedText = ""
-        Me.TextBoxIdMenu2.Size = New System.Drawing.Size(269, 28)
-        Me.TextBoxIdMenu2.TabIndex = 20
-        '
-        'TextBoxNamaMenu2
-        '
-        Me.TextBoxNamaMenu2.BorderRadius = 5
-        Me.TextBoxNamaMenu2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxNamaMenu2.DefaultText = ""
-        Me.TextBoxNamaMenu2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TextBoxNamaMenu2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TextBoxNamaMenu2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBoxNamaMenu2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBoxNamaMenu2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxNamaMenu2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.TextBoxNamaMenu2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxNamaMenu2.Location = New System.Drawing.Point(121, 86)
-        Me.TextBoxNamaMenu2.Name = "TextBoxNamaMenu2"
-        Me.TextBoxNamaMenu2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TextBoxNamaMenu2.PlaceholderText = ""
-        Me.TextBoxNamaMenu2.SelectedText = ""
-        Me.TextBoxNamaMenu2.Size = New System.Drawing.Size(269, 28)
-        Me.TextBoxNamaMenu2.TabIndex = 21
-        '
-        'TextBoxHargaMenu2
-        '
-        Me.TextBoxHargaMenu2.BorderRadius = 5
-        Me.TextBoxHargaMenu2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxHargaMenu2.DefaultText = ""
-        Me.TextBoxHargaMenu2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TextBoxHargaMenu2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TextBoxHargaMenu2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBoxHargaMenu2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBoxHargaMenu2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxHargaMenu2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.TextBoxHargaMenu2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxHargaMenu2.Location = New System.Drawing.Point(121, 123)
-        Me.TextBoxHargaMenu2.Name = "TextBoxHargaMenu2"
-        Me.TextBoxHargaMenu2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TextBoxHargaMenu2.PlaceholderText = ""
-        Me.TextBoxHargaMenu2.SelectedText = ""
-        Me.TextBoxHargaMenu2.Size = New System.Drawing.Size(269, 28)
-        Me.TextBoxHargaMenu2.TabIndex = 22
         '
         'IDPRODUKDataGridViewTextBoxColumn
         '
@@ -403,6 +313,103 @@ Partial Class FormTransaction
         Me.STOKPRODUKDataGridViewTextBoxColumn.Name = "STOKPRODUKDataGridViewTextBoxColumn"
         Me.STOKPRODUKDataGridViewTextBoxColumn.ReadOnly = True
         '
+        'TBLPRODUKBindingSource
+        '
+        Me.TBLPRODUKBindingSource.DataMember = "TBL_PRODUK"
+        Me.TBLPRODUKBindingSource.DataSource = Me.DataSetKu
+        '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.BorderRadius = 20
+        Me.Guna2GroupBox1.BorderThickness = 0
+        Me.Guna2GroupBox1.Controls.Add(Me.TextBoxHargaMenu2)
+        Me.Guna2GroupBox1.Controls.Add(Me.TextBoxNamaMenu2)
+        Me.Guna2GroupBox1.Controls.Add(Me.TextBoxIdMenu2)
+        Me.Guna2GroupBox1.Controls.Add(Me.ButtonTambah)
+        Me.Guna2GroupBox1.Controls.Add(Me.Label6)
+        Me.Guna2GroupBox1.Controls.Add(Me.NumericUpDown1)
+        Me.Guna2GroupBox1.Controls.Add(Me.Label7)
+        Me.Guna2GroupBox1.Controls.Add(Me.Label1)
+        Me.Guna2GroupBox1.Controls.Add(Me.Label5)
+        Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.LightSteelBlue
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(440, 12)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(403, 211)
+        Me.Guna2GroupBox1.TabIndex = 20
+        Me.Guna2GroupBox1.Text = "Tambah Menu"
+        Me.Guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Guna2GroupBox1.UseTransparentBackground = True
+        '
+        'TextBoxHargaMenu2
+        '
+        Me.TextBoxHargaMenu2.BorderRadius = 5
+        Me.TextBoxHargaMenu2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxHargaMenu2.DefaultText = ""
+        Me.TextBoxHargaMenu2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TextBoxHargaMenu2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TextBoxHargaMenu2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBoxHargaMenu2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBoxHargaMenu2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxHargaMenu2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxHargaMenu2.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxHargaMenu2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxHargaMenu2.Location = New System.Drawing.Point(121, 123)
+        Me.TextBoxHargaMenu2.Name = "TextBoxHargaMenu2"
+        Me.TextBoxHargaMenu2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TextBoxHargaMenu2.PlaceholderText = ""
+        Me.TextBoxHargaMenu2.ReadOnly = True
+        Me.TextBoxHargaMenu2.SelectedText = ""
+        Me.TextBoxHargaMenu2.Size = New System.Drawing.Size(269, 28)
+        Me.TextBoxHargaMenu2.TabIndex = 22
+        '
+        'TextBoxNamaMenu2
+        '
+        Me.TextBoxNamaMenu2.BorderRadius = 5
+        Me.TextBoxNamaMenu2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxNamaMenu2.DefaultText = ""
+        Me.TextBoxNamaMenu2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TextBoxNamaMenu2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TextBoxNamaMenu2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBoxNamaMenu2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBoxNamaMenu2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxNamaMenu2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxNamaMenu2.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxNamaMenu2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxNamaMenu2.Location = New System.Drawing.Point(121, 86)
+        Me.TextBoxNamaMenu2.Name = "TextBoxNamaMenu2"
+        Me.TextBoxNamaMenu2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TextBoxNamaMenu2.PlaceholderText = ""
+        Me.TextBoxNamaMenu2.ReadOnly = True
+        Me.TextBoxNamaMenu2.SelectedText = ""
+        Me.TextBoxNamaMenu2.Size = New System.Drawing.Size(269, 28)
+        Me.TextBoxNamaMenu2.TabIndex = 21
+        '
+        'TextBoxIdMenu2
+        '
+        Me.TextBoxIdMenu2.BorderRadius = 5
+        Me.TextBoxIdMenu2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxIdMenu2.DefaultText = ""
+        Me.TextBoxIdMenu2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TextBoxIdMenu2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TextBoxIdMenu2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBoxIdMenu2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBoxIdMenu2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxIdMenu2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxIdMenu2.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxIdMenu2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxIdMenu2.Location = New System.Drawing.Point(121, 49)
+        Me.TextBoxIdMenu2.Name = "TextBoxIdMenu2"
+        Me.TextBoxIdMenu2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TextBoxIdMenu2.PlaceholderText = ""
+        Me.TextBoxIdMenu2.ReadOnly = True
+        Me.TextBoxIdMenu2.SelectedText = ""
+        Me.TextBoxIdMenu2.Size = New System.Drawing.Size(269, 28)
+        Me.TextBoxIdMenu2.TabIndex = 20
+        '
         'Guna2GroupBox2
         '
         Me.Guna2GroupBox2.BackColor = System.Drawing.Color.Transparent
@@ -415,6 +422,7 @@ Partial Class FormTransaction
         Me.Guna2GroupBox2.Controls.Add(Me.TextBoxTotalSementara)
         Me.Guna2GroupBox2.Controls.Add(Me.Label2)
         Me.Guna2GroupBox2.Controls.Add(Me.Label10)
+        Me.Guna2GroupBox2.CustomBorderColor = System.Drawing.Color.LightSteelBlue
         Me.Guna2GroupBox2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
         Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.Guna2GroupBox2.Location = New System.Drawing.Point(440, 237)
@@ -427,6 +435,7 @@ Partial Class FormTransaction
         '
         'TextBoxKembalian
         '
+        Me.TextBoxKembalian.Animated = True
         Me.TextBoxKembalian.BorderRadius = 5
         Me.TextBoxKembalian.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxKembalian.DefaultText = ""
@@ -436,11 +445,13 @@ Partial Class FormTransaction
         Me.TextBoxKembalian.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxKembalian.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBoxKembalian.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TextBoxKembalian.ForeColor = System.Drawing.Color.Black
         Me.TextBoxKembalian.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBoxKembalian.Location = New System.Drawing.Point(121, 137)
         Me.TextBoxKembalian.Name = "TextBoxKembalian"
         Me.TextBoxKembalian.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TextBoxKembalian.PlaceholderText = ""
+        Me.TextBoxKembalian.ReadOnly = True
         Me.TextBoxKembalian.SelectedText = ""
         Me.TextBoxKembalian.Size = New System.Drawing.Size(269, 28)
         Me.TextBoxKembalian.TabIndex = 22
@@ -456,6 +467,7 @@ Partial Class FormTransaction
         Me.TextBoxUangPembeli.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxUangPembeli.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBoxUangPembeli.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TextBoxUangPembeli.ForeColor = System.Drawing.Color.Black
         Me.TextBoxUangPembeli.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBoxUangPembeli.Location = New System.Drawing.Point(121, 100)
         Me.TextBoxUangPembeli.Name = "TextBoxUangPembeli"
@@ -475,15 +487,18 @@ Partial Class FormTransaction
         Me.TextBoxTotalSementara.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxTotalSementara.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxTotalSementara.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxTotalSementara.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TextBoxTotalSementara.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxTotalSementara.ForeColor = System.Drawing.Color.Black
         Me.TextBoxTotalSementara.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBoxTotalSementara.Location = New System.Drawing.Point(22, 49)
         Me.TextBoxTotalSementara.Name = "TextBoxTotalSementara"
         Me.TextBoxTotalSementara.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TextBoxTotalSementara.PlaceholderText = ""
+        Me.TextBoxTotalSementara.ReadOnly = True
         Me.TextBoxTotalSementara.SelectedText = ""
         Me.TextBoxTotalSementara.Size = New System.Drawing.Size(368, 45)
         Me.TextBoxTotalSementara.TabIndex = 20
+        Me.TextBoxTotalSementara.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label2
         '

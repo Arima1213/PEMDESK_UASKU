@@ -67,21 +67,6 @@ Partial Class FormReport
         Dim ChartFont23 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim Tick9 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
         Dim ChartFont24 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont25 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont26 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont27 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont28 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid10 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick10 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont29 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid11 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick11 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont30 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid12 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim PointLabel4 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
-        Dim ChartFont31 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Tick12 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont32 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Label_totalPemasukanHariini = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -90,7 +75,6 @@ Partial Class FormReport
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LABEL_TOTAL_PENJUALAN = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CustomGradientPanel4 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.GunaChart1 = New Guna.Charts.WinForms.GunaChart()
@@ -100,8 +84,6 @@ Partial Class FormReport
         Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.labelMenuTerjualHariIni = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2CustomGradientPanel5 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CustomGradientPanel6 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.GunaChart2 = New Guna.Charts.WinForms.GunaChart()
         Me.GunaPieDataset1 = New Guna.Charts.WinForms.GunaPieDataset()
@@ -110,19 +92,15 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel7 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.DataSetKu = New UAS_WARUNG.DataSetKu()
-        Me.Guna2CustomGradientPanel8 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.GunaChart4 = New Guna.Charts.WinForms.GunaChart()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2CustomGradientPanel2.SuspendLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2CustomGradientPanel4.SuspendLayout()
         Me.Guna2CustomGradientPanel3.SuspendLayout()
-        Me.Guna2CustomGradientPanel5.SuspendLayout()
         Me.Guna2CustomGradientPanel6.SuspendLayout()
         Me.Guna2CustomGradientPanel7.SuspendLayout()
         CType(Me.DataSetKu, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2CustomGradientPanel8.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2CustomGradientPanel1
@@ -132,20 +110,25 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Label_totalPemasukanHariini)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(257, 22)
+        Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.DeepSkyBlue
+        Me.Guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.DodgerBlue
+        Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Navy
+        Me.Guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.SlateBlue
+        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(572, 15)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Me.Guna2CustomGradientPanel1.Quality = 5
         Me.Guna2CustomGradientPanel1.ShadowDecoration.BorderRadius = 20
         Me.Guna2CustomGradientPanel1.ShadowDecoration.Depth = 5
         Me.Guna2CustomGradientPanel1.ShadowDecoration.Enabled = True
         Me.Guna2CustomGradientPanel1.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 0, 2, 10)
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(311, 124)
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(268, 124)
         Me.Guna2CustomGradientPanel1.TabIndex = 5
         '
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Poppins", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(18, 22)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(138, 21)
@@ -156,6 +139,7 @@ Partial Class FormReport
         '
         Me.Label_totalPemasukanHariini.BackColor = System.Drawing.Color.Transparent
         Me.Label_totalPemasukanHariini.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_totalPemasukanHariini.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label_totalPemasukanHariini.Location = New System.Drawing.Point(18, 38)
         Me.Label_totalPemasukanHariini.Name = "Label_totalPemasukanHariini"
         Me.Label_totalPemasukanHariini.Size = New System.Drawing.Size(186, 52)
@@ -183,7 +167,7 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue
         Me.Guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.GhostWhite
         Me.Guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Red
-        Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(30, 22)
+        Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(345, 15)
         Me.Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
         Me.Guna2CustomGradientPanel2.Quality = 20
         Me.Guna2CustomGradientPanel2.ShadowDecoration.BorderRadius = 20
@@ -230,19 +214,6 @@ Partial Class FormReport
         Me.LABEL_TOTAL_PENJUALAN.Text = "Rp233.000"
         Me.LABEL_TOTAL_PENJUALAN.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox1.Image = Global.UAS_WARUNG.My.Resources.Resources.CHIP_transformed__1_1
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(16, 47)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(32, 23)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
-        Me.Guna2PictureBox1.UseTransparentBackground = True
-        '
         'Guna2CustomGradientPanel4
         '
         Me.Guna2CustomGradientPanel4.BackColor = System.Drawing.Color.Transparent
@@ -251,7 +222,7 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.GunaChart1)
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.labelMenuTerjualMingguIni)
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Guna2CustomGradientPanel4.Location = New System.Drawing.Point(195, 167)
+        Me.Guna2CustomGradientPanel4.Location = New System.Drawing.Point(180, 15)
         Me.Guna2CustomGradientPanel4.Name = "Guna2CustomGradientPanel4"
         Me.Guna2CustomGradientPanel4.Quality = 5
         Me.Guna2CustomGradientPanel4.ShadowDecoration.BorderRadius = 20
@@ -336,7 +307,7 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel3.Controls.Add(Me.Guna2HtmlLabel9)
         Me.Guna2CustomGradientPanel3.Controls.Add(Me.labelMenuTerjualHariIni)
         Me.Guna2CustomGradientPanel3.Controls.Add(Me.Guna2HtmlLabel6)
-        Me.Guna2CustomGradientPanel3.Location = New System.Drawing.Point(30, 167)
+        Me.Guna2CustomGradientPanel3.Location = New System.Drawing.Point(15, 15)
         Me.Guna2CustomGradientPanel3.Name = "Guna2CustomGradientPanel3"
         Me.Guna2CustomGradientPanel3.Quality = 5
         Me.Guna2CustomGradientPanel3.ShadowDecoration.BorderRadius = 20
@@ -379,43 +350,19 @@ Partial Class FormReport
         Me.Guna2HtmlLabel6.TabIndex = 0
         Me.Guna2HtmlLabel6.Text = Nothing
         '
-        'Guna2CustomGradientPanel5
-        '
-        Me.Guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CustomGradientPanel5.BorderRadius = 20
-        Me.Guna2CustomGradientPanel5.Controls.Add(Me.Guna2HtmlLabel13)
-        Me.Guna2CustomGradientPanel5.Location = New System.Drawing.Point(359, 167)
-        Me.Guna2CustomGradientPanel5.Name = "Guna2CustomGradientPanel5"
-        Me.Guna2CustomGradientPanel5.Quality = 5
-        Me.Guna2CustomGradientPanel5.ShadowDecoration.BorderRadius = 20
-        Me.Guna2CustomGradientPanel5.ShadowDecoration.Depth = 5
-        Me.Guna2CustomGradientPanel5.ShadowDecoration.Enabled = True
-        Me.Guna2CustomGradientPanel5.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 0, 2, 10)
-        Me.Guna2CustomGradientPanel5.Size = New System.Drawing.Size(209, 125)
-        Me.Guna2CustomGradientPanel5.TabIndex = 8
-        '
-        'Guna2HtmlLabel13
-        '
-        Me.Guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel13.Location = New System.Drawing.Point(69, 54)
-        Me.Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
-        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(3, 2)
-        Me.Guna2HtmlLabel13.TabIndex = 0
-        Me.Guna2HtmlLabel13.Text = Nothing
-        '
         'Guna2CustomGradientPanel6
         '
         Me.Guna2CustomGradientPanel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CustomGradientPanel6.BorderRadius = 20
         Me.Guna2CustomGradientPanel6.Controls.Add(Me.GunaChart2)
-        Me.Guna2CustomGradientPanel6.Location = New System.Drawing.Point(592, 22)
+        Me.Guna2CustomGradientPanel6.Location = New System.Drawing.Point(517, 163)
         Me.Guna2CustomGradientPanel6.Name = "Guna2CustomGradientPanel6"
         Me.Guna2CustomGradientPanel6.Quality = 5
         Me.Guna2CustomGradientPanel6.ShadowDecoration.BorderRadius = 20
         Me.Guna2CustomGradientPanel6.ShadowDecoration.Depth = 5
         Me.Guna2CustomGradientPanel6.ShadowDecoration.Enabled = True
         Me.Guna2CustomGradientPanel6.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 0, 2, 10)
-        Me.Guna2CustomGradientPanel6.Size = New System.Drawing.Size(234, 270)
+        Me.Guna2CustomGradientPanel6.Size = New System.Drawing.Size(323, 305)
         Me.Guna2CustomGradientPanel6.TabIndex = 9
         '
         'GunaChart2
@@ -425,10 +372,10 @@ Partial Class FormReport
         ChartFont9.FontName = "Arial"
         Me.GunaChart2.Legend.LabelFont = ChartFont9
         Me.GunaChart2.Legend.Position = Guna.Charts.WinForms.LegendPosition.Bottom
-        Me.GunaChart2.Location = New System.Drawing.Point(14, -10)
+        Me.GunaChart2.Location = New System.Drawing.Point(14, 3)
         Me.GunaChart2.Misc.BarCornerRadius = 10
         Me.GunaChart2.Name = "GunaChart2"
-        Me.GunaChart2.Size = New System.Drawing.Size(207, 277)
+        Me.GunaChart2.Size = New System.Drawing.Size(294, 302)
         Me.GunaChart2.TabIndex = 11
         ChartFont10.FontName = "Arial"
         ChartFont10.Size = 12
@@ -475,12 +422,14 @@ Partial Class FormReport
         Me.GunaChart3.Location = New System.Drawing.Point(12, 4)
         Me.GunaChart3.Misc.BarCornerRadius = 20
         Me.GunaChart3.Name = "GunaChart3"
-        Me.GunaChart3.Size = New System.Drawing.Size(389, 153)
+        Me.GunaChart3.Size = New System.Drawing.Size(446, 302)
         Me.GunaChart3.TabIndex = 1
         ChartFont18.FontName = "Arial"
         ChartFont18.Size = 12
         ChartFont18.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
         Me.GunaChart3.Title.Font = ChartFont18
+        Me.GunaChart3.Title.ForeColor = System.Drawing.Color.Black
+        Me.GunaChart3.Title.Text = "Pendapatan Harian"
         ChartFont19.FontName = "Arial"
         Me.GunaChart3.Tooltips.BodyFont = ChartFont19
         Me.GunaChart3.Tooltips.CornerRadius = 20
@@ -516,14 +465,14 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel7.BorderRadius = 20
         Me.Guna2CustomGradientPanel7.Controls.Add(Me.GunaChart3)
         Me.Guna2CustomGradientPanel7.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Guna2CustomGradientPanel7.Location = New System.Drawing.Point(30, 311)
+        Me.Guna2CustomGradientPanel7.Location = New System.Drawing.Point(18, 163)
         Me.Guna2CustomGradientPanel7.Name = "Guna2CustomGradientPanel7"
         Me.Guna2CustomGradientPanel7.Quality = 5
         Me.Guna2CustomGradientPanel7.ShadowDecoration.BorderRadius = 20
         Me.Guna2CustomGradientPanel7.ShadowDecoration.Depth = 5
         Me.Guna2CustomGradientPanel7.ShadowDecoration.Enabled = True
         Me.Guna2CustomGradientPanel7.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 0, 2, 10)
-        Me.Guna2CustomGradientPanel7.Size = New System.Drawing.Size(417, 161)
+        Me.Guna2CustomGradientPanel7.Size = New System.Drawing.Size(478, 309)
         Me.Guna2CustomGradientPanel7.TabIndex = 9
         '
         'Guna2HtmlLabel2
@@ -540,68 +489,18 @@ Partial Class FormReport
         Me.DataSetKu.DataSetName = "DataSetKu"
         Me.DataSetKu.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Guna2CustomGradientPanel8
+        'Guna2PictureBox1
         '
-        Me.Guna2CustomGradientPanel8.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CustomGradientPanel8.BorderRadius = 20
-        Me.Guna2CustomGradientPanel8.Controls.Add(Me.GunaChart4)
-        Me.Guna2CustomGradientPanel8.Controls.Add(Me.Guna2HtmlLabel4)
-        Me.Guna2CustomGradientPanel8.Location = New System.Drawing.Point(465, 311)
-        Me.Guna2CustomGradientPanel8.Name = "Guna2CustomGradientPanel8"
-        Me.Guna2CustomGradientPanel8.Quality = 5
-        Me.Guna2CustomGradientPanel8.ShadowDecoration.BorderRadius = 20
-        Me.Guna2CustomGradientPanel8.ShadowDecoration.Depth = 5
-        Me.Guna2CustomGradientPanel8.ShadowDecoration.Enabled = True
-        Me.Guna2CustomGradientPanel8.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 0, 2, 10)
-        Me.Guna2CustomGradientPanel8.Size = New System.Drawing.Size(361, 161)
-        Me.Guna2CustomGradientPanel8.TabIndex = 10
-        '
-        'GunaChart4
-        '
-        Me.GunaChart4.BackColor = System.Drawing.Color.White
-        Me.GunaChart4.Legend.Display = False
-        ChartFont25.FontName = "Arial"
-        Me.GunaChart4.Legend.LabelFont = ChartFont25
-        Me.GunaChart4.Location = New System.Drawing.Point(12, 4)
-        Me.GunaChart4.Misc.BarCornerRadius = 20
-        Me.GunaChart4.Name = "GunaChart4"
-        Me.GunaChart4.Size = New System.Drawing.Size(336, 153)
-        Me.GunaChart4.TabIndex = 1
-        ChartFont26.FontName = "Arial"
-        ChartFont26.Size = 12
-        ChartFont26.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.GunaChart4.Title.Font = ChartFont26
-        ChartFont27.FontName = "Arial"
-        Me.GunaChart4.Tooltips.BodyFont = ChartFont27
-        Me.GunaChart4.Tooltips.CornerRadius = 20
-        ChartFont28.FontName = "Arial"
-        ChartFont28.Size = 9
-        ChartFont28.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.GunaChart4.Tooltips.TitleFont = ChartFont28
-        Me.GunaChart4.XAxes.GridLines = Grid10
-        ChartFont29.FontName = "Arial"
-        Tick10.Font = ChartFont29
-        Me.GunaChart4.XAxes.Ticks = Tick10
-        Me.GunaChart4.YAxes.GridLines = Grid11
-        ChartFont30.FontName = "Arial"
-        Tick11.Font = ChartFont30
-        Me.GunaChart4.YAxes.Ticks = Tick11
-        Me.GunaChart4.ZAxes.GridLines = Grid12
-        ChartFont31.FontName = "Arial"
-        PointLabel4.Font = ChartFont31
-        Me.GunaChart4.ZAxes.PointLabels = PointLabel4
-        ChartFont32.FontName = "Arial"
-        Tick12.Font = ChartFont32
-        Me.GunaChart4.ZAxes.Ticks = Tick12
-        '
-        'Guna2HtmlLabel4
-        '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(69, 54)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(3, 2)
-        Me.Guna2HtmlLabel4.TabIndex = 0
-        Me.Guna2HtmlLabel4.Text = Nothing
+        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox1.Image = Global.UAS_WARUNG.My.Resources.Resources.CHIP_transformed__1_1
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(16, 47)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(32, 23)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
+        Me.Guna2PictureBox1.UseTransparentBackground = True
         '
         'FormReport
         '
@@ -609,8 +508,6 @@ Partial Class FormReport
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(855, 471)
-        Me.Controls.Add(Me.Guna2CustomGradientPanel8)
-        Me.Controls.Add(Me.Guna2CustomGradientPanel5)
         Me.Controls.Add(Me.Guna2CustomGradientPanel3)
         Me.Controls.Add(Me.Guna2CustomGradientPanel4)
         Me.Controls.Add(Me.Guna2CustomGradientPanel2)
@@ -624,19 +521,15 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel1.PerformLayout()
         Me.Guna2CustomGradientPanel2.ResumeLayout(False)
         Me.Guna2CustomGradientPanel2.PerformLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2CustomGradientPanel4.ResumeLayout(False)
         Me.Guna2CustomGradientPanel4.PerformLayout()
         Me.Guna2CustomGradientPanel3.ResumeLayout(False)
         Me.Guna2CustomGradientPanel3.PerformLayout()
-        Me.Guna2CustomGradientPanel5.ResumeLayout(False)
-        Me.Guna2CustomGradientPanel5.PerformLayout()
         Me.Guna2CustomGradientPanel6.ResumeLayout(False)
         Me.Guna2CustomGradientPanel7.ResumeLayout(False)
         Me.Guna2CustomGradientPanel7.PerformLayout()
         CType(Me.DataSetKu, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2CustomGradientPanel8.ResumeLayout(False)
-        Me.Guna2CustomGradientPanel8.PerformLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -658,8 +551,6 @@ Partial Class FormReport
     Friend WithEvents labelMenuTerjualMingguIni As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents labelMenuTerjualHariIni As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2CustomGradientPanel5 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Friend WithEvents Guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents GunaPieDataset1 As Guna.Charts.WinForms.GunaPieDataset
     Friend WithEvents Guna2CustomGradientPanel6 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Friend WithEvents GunaChart2 As Guna.Charts.WinForms.GunaChart
@@ -667,8 +558,5 @@ Partial Class FormReport
     Friend WithEvents Guna2CustomGradientPanel7 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents GunaChart3 As Guna.Charts.WinForms.GunaChart
-    Friend WithEvents Guna2CustomGradientPanel8 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Friend WithEvents GunaChart4 As Guna.Charts.WinForms.GunaChart
-    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents GunaHorizontalBarDataset1 As Guna.Charts.WinForms.GunaHorizontalBarDataset
 End Class

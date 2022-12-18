@@ -110,7 +110,7 @@
         dt = New DataTable
         data = adapter.Fill(dt)
 
-        For urutan = 0 To 3
+        For urutan = 0 To 4
             menu(urutan) = dt.Rows(urutan)(1).ToString()
         Next urutan
         Return menu
@@ -125,7 +125,7 @@
         dt = New DataTable
         data = adapter.Fill(dt)
 
-        For urutan = 0 To 3
+        For urutan = 0 To 4
             menu(urutan) = dt.Rows(urutan)(0).ToString()
         Next urutan
         Return menu
