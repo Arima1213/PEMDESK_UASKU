@@ -1,10 +1,4 @@
-﻿
-Imports System.Data.OracleClient
-Imports System
-Imports System.Drawing
-Imports Guna.Charts.WinForms
-
-Public Class FormReport
+﻿Public Class FormReport
     Dim dt As DataTable
     Dim adapter As OracleDataAdapter
     Dim sqlstr As String

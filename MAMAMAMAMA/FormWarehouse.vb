@@ -1,8 +1,4 @@
-﻿
-
-Imports TheArtOfDevHtmlRenderer.Adapters
-
-Public Class FormWarehouse
+﻿Public Class FormWarehouse
     Dim ff As Integer
     Dim dt As DataTable
     Dim adapter As OracleDataAdapter
@@ -31,7 +27,7 @@ Public Class FormWarehouse
         Return Tanggal
     End Function
 
-    Private Sub bersih()
+    Private Sub Bersih()
         TextBoxStok.Text = ""
         TextBoxNamaMenu.Text = ""
         TextBoxHargaMenu.Text = ""
@@ -48,15 +44,15 @@ Public Class FormWarehouse
         sqlstr = "SELECT * FROM TBL_STOKHARIAN"
         adapter = New OracleDataAdapter(sqlstr, conn)
         dt = New DataTable
-        Data = adapter.Fill(dt)
-        If Data > 0 Then
+        data = adapter.Fill(dt)
+        If data > 0 Then
             dataharian = dt.Rows(0)(0).ToString()
         End If
         Return dataharian
     End Function
 
     Private Sub ButtonSimpan_Click(sender As Object, e As EventArgs) Handles ButtonSimpan.Click
-        koneksi.konek()
+        koneksi.Konek()
 
         Try
             perintah.CommandType = CommandType.Text
@@ -68,8 +64,8 @@ Public Class FormWarehouse
             MsgBox("Data gagal disimpan" + ex.Message, MsgBoxStyle.Critical)
         End Try
         conn.Close()
-        koneksi.tampildata()
-        bersih()
+        koneksi.Tampildata()
+        Bersih()
     End Sub
 
     Private Sub DataGridViewMenu_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewMenu.CellClick
@@ -84,7 +80,7 @@ Public Class FormWarehouse
     End Sub
 
     Private Sub ButtonHapus_Click(sender As Object, e As EventArgs) Handles ButtonHapus.Click
-        koneksi.konek()
+        koneksi.Konek()
 
         Try
             perintah.CommandType = CommandType.Text
@@ -96,12 +92,12 @@ Public Class FormWarehouse
             MsgBox("Data gagal dihapus" + ex.Message, MsgBoxStyle.Critical)
         End Try
         conn.Close()
-        koneksi.tampildata()
-        bersih()
+        koneksi.Tampildata()
+        Bersih()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        konek()
+        Konek()
         Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
 
         'pengurangan stok produk oleh pembelian

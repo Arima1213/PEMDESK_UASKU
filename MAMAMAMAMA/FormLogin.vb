@@ -1,5 +1,4 @@
-﻿Imports Guna.UI2
-Public Class FormLogin
+﻿Public Class FormLogin
     Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
         If TextBoxUsername.Text = "makijah" And TextBoxPassword.Text = "123" Then
             FormUtama.ShowDialog()

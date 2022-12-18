@@ -1,7 +1,5 @@
-﻿Imports System.Data.OracleClient
-Public Class FormTransaction
+﻿Public Class FormTransaction
     Dim ff As Integer
-    Dim id_pembelian As String
     Dim dt As DataTable
     Dim adapter As OracleDataAdapter
     Dim sqlstr As String
@@ -12,12 +10,12 @@ Public Class FormTransaction
     Private Sub FormTransaction_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'DataSetKu.menu' table. You can move, or remove it, as needed.
         Me.TBL_PRODUKTableAdapter.Fill(Me.DataSetKu.TBL_PRODUK)
-        tampildata2()
+        TampilData2()
         TextBoxTotalSementara.Text = 0
 
     End Sub
 
-    Public Sub tampildata2()
+    Public Sub TampilData2()
 
 
         sqlstr = "SELECT * FROM TBL_PRODUK WHERE STOK_PRODUK is NOT NULL"
@@ -34,7 +32,7 @@ Public Class FormTransaction
 
     End Sub
 
-    Public Function totalsementara()
+    Public Function TotalSementara()
         Dim mm As Integer = 0
         Dim ChaceTotal As Integer
         For Each items As ListViewItem In ListViewTransaksi.Items
@@ -44,7 +42,7 @@ Public Class FormTransaction
         Return ChaceTotal
     End Function
 
-    Public Function getLastIdTransaksi() As String
+    Public Function GetLastIdTransaksi() As String
 
         Dim idtransaksi As String
 
@@ -81,10 +79,10 @@ Public Class FormTransaction
         Return IDPRODUK
     End Function
 
-    Sub checkout()
+    Sub Checkout()
         Dim nn As Integer = 0
         Dim URUTAN As Integer = 0
-        konek()
+        Konek()
         Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
 
         'pengurangan stok produk oleh pembelian
@@ -110,7 +108,7 @@ Public Class FormTransaction
         perintah.ExecuteNonQuery()
 
 
-        Dim idtransa As String = getLastIdTransaksi()
+        Dim idtransa As String = GetLastIdTransaksi()
 
         'mencari nilai id_transaksi
         Try
@@ -177,11 +175,11 @@ Public Class FormTransaction
                     ListViewTransaksi.Items(ListViewTransaksi.Items.Count - 1).SubItems.Add(DataGridViewMenu(2, ff).Value)
                     ListViewTransaksi.Items(ListViewTransaksi.Items.Count - 1).SubItems.Add(NumericUpDown1.Value)
                     ListViewTransaksi.Items(ListViewTransaksi.Items.Count - 1).SubItems.Add(DataGridViewMenu(2, ff).Value * NumericUpDown1.Value)
-                    totalsementara()
+                    TotalSementara()
                 End If
             End If
         End If
-        TextBoxTotalSementara.Text = totalsementara()
+        TextBoxTotalSementara.Text = TotalSementara()
     End Sub
 
     Private Sub ButtonCheckout_Click(sender As Object, e As EventArgs) Handles ButtonCheckout.Click
@@ -195,7 +193,7 @@ Public Class FormTransaction
                     MsgBox("Uang Pembeli Kurang")
                 Else
 
-                    checkout()
+                    Checkout()
                     FormUtama.ButtonTransaction.PerformClick()
 
                 End If

@@ -1,5 +1,4 @@
-﻿Imports System.Data.OracleClient
-Public Class FormUtama
+﻿Public Class FormUtama
     Public currentChildForm As Form
     Dim dt As DataTable
     Dim adapter As OracleDataAdapter
@@ -17,8 +16,8 @@ Public Class FormUtama
             UpdateStokHarian()
         End If
         OpenChildForm(New FormTransaction)
-        koneksi.konek()
-        koneksi.tampildata()
+        koneksi.Konek()
+        koneksi.Tampildata()
         ButtonTransaction.Focus()
         FormLogin.Hide()
     End Sub
@@ -42,7 +41,7 @@ Public Class FormUtama
     End Sub
     Private Sub ButtonWarehouse_Click(sender As Object, e As EventArgs)
         OpenChildForm(New FormWarehouse)
-        koneksi.tampildata()
+        koneksi.Tampildata()
     End Sub
 
     Public Function GetNilai() As String
@@ -91,11 +90,11 @@ Public Class FormUtama
         dt = New DataTable
         data = adapter.Fill(dt)
         If data = 0 Then
-            sqlstr = "INSERT INTO " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_STOKHARIAN" & ControlChars.Quote & "   (STOK_HARIAN, TANGGALSTOCKING) VALUES ('" & getnilai() & "', TO_DATE('" & myDate & "', 'dd/mm/yyyy'))"
+            sqlstr = "INSERT INTO " & ControlChars.Quote & "DBWARUNG" & ControlChars.Quote & "." & ControlChars.Quote & "TBL_STOKHARIAN" & ControlChars.Quote & "   (STOK_HARIAN, TANGGALSTOCKING) VALUES ('" & GetNilai() & "', TO_DATE('" & myDate & "', 'dd/mm/yyyy'))"
             adapter = New OracleDataAdapter(sqlstr, conn)
-            UpdateStok(getnilai())
+            UpdateStok(GetNilai())
         Else
-            UpdateStok(getnilai())
+            UpdateStok(GetNilai())
         End If
     End Function
 

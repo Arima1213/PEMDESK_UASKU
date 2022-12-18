@@ -1,6 +1,4 @@
-﻿Imports System.Data.OracleClient
-
-Module koneksi
+﻿Module koneksi
     Public MySQLReader As OracleDataAdapter
     Public CMD As New OracleCommand
     Public DA As New OracleDataAdapter
