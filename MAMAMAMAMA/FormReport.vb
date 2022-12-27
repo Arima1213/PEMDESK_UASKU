@@ -5,21 +5,24 @@
     Dim data As Integer
 
     Private Sub FormReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If GetDataTotalPenjualanHariIni() = "" Then
-            Label_totalPemasukanHariini.Text = 0
+        If GetnilaiPenjualanHariIni() = "" Then
+            labelMenuTerjualHariIni.Text = 0
         Else
-            Label_totalPemasukanHariini.Text = GetDataTotalPenjualanHariIni()
+            labelMenuTerjualHariIni.Text = GetnilaiPenjualanHariIni()
         End If
+
         If GetDataTotalPenjualan() = "" Then
             LABEL_TOTAL_PENJUALAN.Text = 0
         Else
             LABEL_TOTAL_PENJUALAN.Text = GetDataTotalPenjualan()
         End If
+
         If GetDataTotalPenjualanHariIni() = "" Then
             Label_totalPemasukanHariini.Text = 0
         Else
             Label_totalPemasukanHariini.Text = GetDataTotalPenjualanHariIni()
         End If
+
         If GetnilaiPenjualanMingguIni() = "" Then
             labelMenuTerjualMingguIni.Text = 0
         Else
@@ -168,8 +171,7 @@
         Dim total As String
         Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
 
-        sqlstr = "select sum(jumlah_pesanan) from tbl_transaksi where tanggal_transaksi <= trunc(sysdate)
-and tanggal_transaksi >= trunc(sysdate - 7)"
+        sqlstr = "select sum(jumlah_pesanan) from tbl_transaksi where tanggal_transaksi <= trunc(sysdate)and tanggal_transaksi >= trunc(sysdate - 7)"
         adapter = New OracleDataAdapter(sqlstr, conn)
         dt = New DataTable
         data = adapter.Fill(dt)
