@@ -137,7 +137,7 @@
         Dim total As String
         Dim myDate = Convert.ToDateTime(Now.ToString("dd-MMM-yyyy"))
 
-        sqlstr = "select to_char(sum(TOTAL_TRANSAKSI), '$99,999,999') from TBL_TRANSAKSI where tanggal_transaksi in to_date('" & myDate & "', 'dd-mm-yyyy')"
+        sqlstr = "select to_char(sum(TOTAL_TRANSAKSI), '99,999,999') from TBL_TRANSAKSI where tanggal_transaksi in to_date('" & myDate & "', 'dd-mm-yyyy')"
         adapter = New OracleDataAdapter(sqlstr, conn)
         dt = New DataTable
         data = adapter.Fill(dt)
@@ -187,7 +187,7 @@
 
         Dim total As String
 
-        sqlstr = "select to_char(sum(TOTAL_TRANSAKSI), '$99,999,999') from TBL_TRANSAKSI"
+        sqlstr = "select to_char(sum(TOTAL_TRANSAKSI), '99,999,999') from TBL_TRANSAKSI"
         adapter = New OracleDataAdapter(sqlstr, conn)
         dt = New DataTable
         data = adapter.Fill(dt)

@@ -114,7 +114,7 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.DodgerBlue
         Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Navy
         Me.Guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.SlateBlue
-        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(572, 15)
+        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(179, 16)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Me.Guna2CustomGradientPanel1.Quality = 5
         Me.Guna2CustomGradientPanel1.ShadowDecoration.BorderRadius = 20
@@ -167,7 +167,7 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue
         Me.Guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.GhostWhite
         Me.Guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Red
-        Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(345, 15)
+        Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(629, 16)
         Me.Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
         Me.Guna2CustomGradientPanel2.Quality = 20
         Me.Guna2CustomGradientPanel2.ShadowDecoration.BorderRadius = 20
@@ -235,7 +235,7 @@ Partial Class FormReport
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.GunaChart1)
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.labelMenuTerjualMingguIni)
         Me.Guna2CustomGradientPanel4.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Guna2CustomGradientPanel4.Location = New System.Drawing.Point(180, 15)
+        Me.Guna2CustomGradientPanel4.Location = New System.Drawing.Point(464, 16)
         Me.Guna2CustomGradientPanel4.Name = "Guna2CustomGradientPanel4"
         Me.Guna2CustomGradientPanel4.Quality = 5
         Me.Guna2CustomGradientPanel4.ShadowDecoration.BorderRadius = 20
@@ -510,8 +510,8 @@ Partial Class FormReport
         Me.ClientSize = New System.Drawing.Size(855, 471)
         Me.Controls.Add(Me.Guna2CustomGradientPanel3)
         Me.Controls.Add(Me.Guna2CustomGradientPanel4)
-        Me.Controls.Add(Me.Guna2CustomGradientPanel2)
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)
+        Me.Controls.Add(Me.Guna2CustomGradientPanel2)
         Me.Controls.Add(Me.Guna2CustomGradientPanel6)
         Me.Controls.Add(Me.Guna2CustomGradientPanel7)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
